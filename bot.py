@@ -37,7 +37,7 @@ def main():
     print(f"  Strategy: {STRATEGY.upper()}")
     print(f"{'═'*50}\n")
 
-    if not PAPER_TRADING:
+        if not PAPER_TRADING and sys.stdin.isatty():
         confirm_live()
 
     # Connect exchange
